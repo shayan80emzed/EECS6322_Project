@@ -68,7 +68,7 @@ Interpretability notebooks visualize and compare the original CLIP model with bo
 
 - **Saliency maps** became significantly more focused and aligned with semantic content.
 - **Attention maps** were clearer and more structured post fine-tuning.
-- **ROAR analysis** showed a performance drop when top features were removed—confirming improved attribution.
+- **ROAR analysis** showed a performance drop but was not consistent with the paper in terms of the slope of the drop.
 
 All interpretability evaluation results are available in the `results/` folder. 
 
