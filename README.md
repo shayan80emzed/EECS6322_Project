@@ -1,4 +1,4 @@
-# 🧠 EECS6322 Project: Boosting the Visual Interpretability of CLIP via Adversarial Fine-Tuning
+# EECS6322 Project: Boosting the Visual Interpretability of CLIP via Adversarial Fine-Tuning
 
 > Reproducibility Study · York University  
 > Course: EECS6322 - Neural Networks and Deep Learning  
