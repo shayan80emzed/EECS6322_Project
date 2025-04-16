@@ -72,8 +72,8 @@ Interpretability notebooks visualize and compare the original CLIP model with bo
 
 All interpretability evaluation results are available in the `results/` folder.
 My pretrained checkpoints (adversarially fine-tuned models) can be found here:
-[ViT-B-16, L-Infinity Regularizatoin] (https://drive.google.com/file/d/1RwSsiPZCJAxUwpyof3_Kqh9weafR9STI/view?usp=sharing)
-[ViT-B-16, Hurber Regularization] (https://drive.google.com/file/d/1jya6xPalov3jAS9FafsuA6kKKM5qY4Db/view?usp=sharing)
+[ViT-B-16, L-Infinity Regularizatoin](https://drive.google.com/file/d/1RwSsiPZCJAxUwpyof3_Kqh9weafR9STI/view?usp=sharing)
+[ViT-B-16, Hurber Regularization](https://drive.google.com/file/d/1jya6xPalov3jAS9FafsuA6kKKM5qY4Db/view?usp=sharing)
 
 ---
 
