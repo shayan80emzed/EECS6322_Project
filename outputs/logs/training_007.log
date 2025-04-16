@@ -1,0 +1,89 @@
+INFO - ================================================================================
+INFO - Starting CLIP Vision Encoder Adversarial Fine-tuning
+INFO - ================================================================================
+INFO - Log file: outputs/logs/training_007.log
+INFO - Python version: 3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0]
+INFO - PyTorch version: 2.0.1+cu117
+INFO - CUDA available: True
+INFO - CUDA device: Quadro RTX 6000
+INFO - Number of GPUs: 4
+INFO - --------------------------------------------------------------------------------
+INFO - Training Configuration:
+INFO - --------------------------------------------------------------------------------
+INFO - clip_model_name          : ViT-B-16
+INFO - pretrained               : openai
+INFO - dataset                  : imagenet
+INFO - imagenet_root            : /datasets/imagenet
+INFO - steps                    : 600
+INFO - warmup                   : 400
+INFO - batch_size               : 128
+INFO - lr                       : 0.0001
+INFO - wd                       : 0.0001
+INFO - opt                      : adamw
+INFO - momentum_sgd             : 0.9
+INFO - attack                   : pgd
+INFO - norm                     : huber
+INFO - eps                      : 0.01568627450980392
+INFO - eps2                     : 0.01568627450980392
+INFO - iterations_adv           : 10
+INFO - stepsize_adv             : 0.00392156862745098
+INFO - clean_weight             : 0.0
+INFO - output_dir               : outputs
+INFO - save_checkpoints         : True
+INFO - log_freq                 : 30
+INFO - log_file                 : outputs/training.log
+INFO - output_normalize         : False
+INFO - --------------------------------------------------------------------------------
+INFO - Initializing training...
+INFO - Successfully loaded CLIP model
+INFO - Successfully loaded CLIP model
+INFO - Loading dataset from: /datasets/imagenet
+INFO - Training samples: 1281167
+INFO - Created dataloader with batch size: 128
+INFO - Setting up models...
+INFO - Models moved to CUDA
+INFO - Using DataParallel with 4 GPUs
+INFO - Setting up adamw optimizer...
+INFO - Optimizer: AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0001
+    maximize: False
+    weight_decay: 0.0001
+)
+INFO - Setting up cosine learning rate scheduler...
+INFO - Learning rate scheduler: cosine with warmup=400, total_steps=600
+INFO - Starting training loop...
+INFO - Train Step: 0/600 (0%)	Loss: 0.334481
+INFO - Train Step: 30/600 (5%)	Loss: 0.145393
+INFO - Train Step: 60/600 (10%)	Loss: 0.108149
+INFO - Train Step: 90/600 (15%)	Loss: 0.107033
+INFO - Train Step: 120/600 (20%)	Loss: 0.097590
+INFO - Train Step: 150/600 (25%)	Loss: 0.088465
+INFO - Train Step: 180/600 (30%)	Loss: 0.082715
+INFO - Train Step: 210/600 (35%)	Loss: 0.081464
+INFO - Train Step: 240/600 (40%)	Loss: 0.078521
+INFO - Train Step: 270/600 (45%)	Loss: 0.080395
+INFO - Train Step: 300/600 (50%)	Loss: 0.073446
+INFO - Train Step: 330/600 (55%)	Loss: 0.075950
+INFO - Train Step: 360/600 (60%)	Loss: 0.078225
+INFO - Train Step: 390/600 (65%)	Loss: 0.077187
+INFO - Train Step: 420/600 (70%)	Loss: 0.074817
+INFO - Train Step: 450/600 (75%)	Loss: 0.078337
+INFO - Train Step: 480/600 (80%)	Loss: 0.073810
+INFO - Train Step: 510/600 (85%)	Loss: 0.070701
+INFO - Train Step: 540/600 (90%)	Loss: 0.070395
+INFO - Train Step: 570/600 (95%)	Loss: 0.068779
+INFO - Training completed in 2816.06s
+INFO - Created output directory: outputs
+INFO - Saved final model checkpoint to outputs/checkpoints/final2.pt
+INFO - Saved optimizer state to outputs/checkpoints/final_opt2.pt
+INFO - ================================================================================
+INFO - Training finished
+INFO - ================================================================================

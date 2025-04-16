@@ -1,0 +1,83 @@
+INFO - ================================================================================
+INFO - Starting CLIP Vision Encoder Adversarial Fine-tuning
+INFO - ================================================================================
+INFO - Log file: outputs/logs/training_001.log
+INFO - Python version: 3.10.16 (main, Dec 11 2024, 16:24:50) [GCC 11.2.0]
+INFO - PyTorch version: 2.0.1+cu117
+INFO - CUDA available: True
+INFO - CUDA device: Quadro RTX 6000
+INFO - Number of GPUs: 4
+INFO - --------------------------------------------------------------------------------
+INFO - Training Configuration:
+INFO - --------------------------------------------------------------------------------
+INFO - clip_model_name          : ViT-B-16
+INFO - pretrained               : openai
+INFO - dataset                  : imagenet
+INFO - imagenet_root            : /datasets/imagenet
+INFO - steps                    : 2000
+INFO - warmup                   : 1400
+INFO - batch_size               : 128
+INFO - lr                       : 0.001
+INFO - wd                       : 0.0001
+INFO - opt                      : adamw
+INFO - momentum_sgd             : 0.9
+INFO - attack                   : pgd
+INFO - norm                     : l2
+INFO - eps                      : 4.0
+INFO - eps2                     : 4.0
+INFO - iterations_adv           : 10
+INFO - stepsize_adv             : 1.0
+INFO - clean_weight             : 0.0
+INFO - loss                     : l2
+INFO - loss_clean               : l2
+INFO - inner_loss               : l2
+INFO - output_dir               : outputs
+INFO - save_checkpoints         : True
+INFO - log_freq                 : 30
+INFO - log_file                 : outputs/training.log
+INFO - output_normalize         : False
+INFO - --------------------------------------------------------------------------------
+INFO - Initializing training...
+INFO - Successfully loaded CLIP model
+INFO - Successfully loaded CLIP model
+INFO - Loading dataset from: /datasets/imagenet
+INFO - Training samples: 1281167
+INFO - Created dataloader with batch size: 128
+INFO - Setting up models...
+INFO - Models moved to CUDA
+INFO - Using DataParallel with 4 GPUs
+INFO - Setting up adamw optimizer...
+INFO - Optimizer: AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0001
+)
+INFO - Setting up OneCycleLR scheduler...
+INFO - Learning rate scheduler: OneCycleLR with max_lr=0.001, total_steps=2000
+INFO - Starting training loop...
+INFO - Train Step: 0/2000 (0%)	Loss: 0.008159
+INFO - Train Step: 30/2000 (2%)	Loss: 0.031709
+INFO - Train Step: 60/2000 (3%)	Loss: 0.031397
+INFO - Train Step: 90/2000 (4%)	Loss: 0.016038
+INFO - Train Step: 120/2000 (6%)	Loss: 0.016917
+INFO - Train Step: 150/2000 (8%)	Loss: 0.013572
+INFO - Train Step: 180/2000 (9%)	Loss: 0.011896
+INFO - Train Step: 210/2000 (10%)	Loss: 0.009842
+INFO - Train Step: 240/2000 (12%)	Loss: 0.009448
+INFO - Train Step: 270/2000 (14%)	Loss: 0.007918
+INFO - Train Step: 300/2000 (15%)	Loss: 0.009232
+INFO - Train Step: 330/2000 (16%)	Loss: 0.008644
+INFO - Train Step: 360/2000 (18%)	Loss: 0.009257
+INFO - Train Step: 390/2000 (20%)	Loss: 0.008267
+INFO - Train Step: 420/2000 (21%)	Loss: 0.008887
+INFO - ================================================================================
+INFO - Training finished
+INFO - ================================================================================
