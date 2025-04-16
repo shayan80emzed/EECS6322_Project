@@ -80,9 +80,7 @@ My pretrained checkpoints (adversarially fine-tuned models) can be found here:
 
 ---
 
-## 💾 Installation & Usage
-
-### 🔨 Setup
+## 🔨 Setup
 
 ```bash
 git clone https://github.com/shayan80emzed/EECS6322_Project.git
