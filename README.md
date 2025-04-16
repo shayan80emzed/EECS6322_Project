@@ -70,7 +70,8 @@ Interpretability notebooks visualize and compare the original CLIP model with bo
 - **Attention maps** were clearer and more structured post fine-tuning.
 - **ROAR analysis** showed a performance drop when top features were removed—confirming improved attribution.
 
-All interpretability evaluation results are available in the `results/` folder.
+All interpretability evaluation results are available in the `results/` folder. 
+
 My pretrained checkpoints (adversarially fine-tuned models) can be found here: 
 
 [ViT-B-16, L-Infinity Regularizatoin](https://drive.google.com/file/d/1RwSsiPZCJAxUwpyof3_Kqh9weafR9STI/view?usp=sharing) 
